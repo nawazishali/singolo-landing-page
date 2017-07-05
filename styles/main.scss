@@ -17,18 +17,27 @@ body {
         font-weight: 700;
         margin-top: 17px;
     }
-    .navbar-nav>li>a {
-        color: #ffffff !important;
-        font-size: 11.66px;
-        font-weight: 700;
-        margin-top: 17px;
-        &:focus {
-            color: #ee5052 !important;
-            background-color: #303441 !important;
+    .navbar-nav>li> {
+        a {
+            color: #ffffff !important;
+            font-size: 11.66px;
+            font-weight: 700;
+            margin-top: 17px;
+            &:focus {
+                color: #ee5052 !important;
+                background-color: #303441 !important;
+            }
+            &:active {
+                color: #ee5052 !important;
+                background-color: #303441 !important;
+            }
         }
-        &:active {
-            color: #ee5052 !important;
-            background-color: #303441 !important;
+        p {
+            color: #494e62 !important;
+            font-size: 14.66px;
+            font-weight: 700;
+            margin-top: 17px;
+            padding: 15px 0;
         }
     }
 }
