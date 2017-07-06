@@ -5,13 +5,15 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     color: #767e9e;
+    background-color: #f2f2f2;
     h2 {
         font-size: 29.61px;
         font-weight: 900;
         line-height: 4.56px;
+        margin-bottom: 20px;
     }
     h4 {
-        font-size: 17.78px;
+        font-size: 16.78px;
         font-weight: 600;
         line-height: 4.56px;
     }
@@ -24,11 +26,14 @@ body {
         font-size: 18px;
         font-weight: 300;
         padding-top: 20px;
+        margin-bottom: 50px;
         letter-spacing: 2px;
     }
     .container {
         padding-top: 67px;
         padding-bottom: 67px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -38,10 +43,8 @@ body {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-
-    * {
-        margin: 30px 10px;
-
+    @media (max-width: 768px) {
+        justify-content: center;
     }
 }
 
@@ -92,6 +95,7 @@ body {
             color: #494e62 !important;
             font-size: 14.66px;
             font-weight: 700;
+            margin: 0;
             margin-top: 17px;
             padding: 15px 0;
             @media (max-width: 768px) {
@@ -110,7 +114,6 @@ body {
 }
 
 #services {
-    background-color: #f2f2f2;
     min-height: 496px;
     border-bottom: 6px solid #ffffff;
     .service {
@@ -139,9 +142,6 @@ body {
 #portfolio {
     background-color: #303441;
     border-bottom: 6px solid #373b4a;
-    p{
-        margin-bottom: 20px;
-    }
     a {
         border: 1px solid #767e9e;
         color: #767e9e;
@@ -157,6 +157,52 @@ body {
         &:focus {
             color: #dedede;
             border-color: #dedede;
+        }
+    }
+    img {
+        margin: 30px 10px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+#about {
+    border-bottom: 6px solid #ffffff;
+    .person {
+        width: 300px;
+        margin: 5px;
+        ;
+        img {
+            margin-bottom: 15px;
+        }
+        h4 {
+            margin-bottom: 15px;
+        }
+        h6 {
+            margin-bottom: 15px;
+        }
+        a {
+            border: 1px solid #767e9e;
+            color: #767e9e;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin: 5px;
+            margin-top: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 6px;
+            &:hover {
+                color: #dedede;
+                border-color: #dedede;
+            }
+            &:focus {
+                color: #dedede;
+                border-color: #dedede;
+            }
         }
     }
 }
