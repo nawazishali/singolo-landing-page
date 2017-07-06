@@ -1,40 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
-html,
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
     color: #767e9e;
     background-color: #f2f2f2;
-    h2 {
-        font-size: 29.61px;
-        font-weight: 900;
-        line-height: 4.56px;
-        margin-bottom: 20px;
-    }
-    h4 {
-        font-size: 16.78px;
-        font-weight: 600;
-        line-height: 4.56px;
-    }
-    h6 {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 21.56px;
-    }
-    p {
-        font-size: 18px;
-        font-weight: 300;
-        padding-top: 20px;
-        margin-bottom: 50px;
-        letter-spacing: 2px;
-    }
-    .container {
-        padding-top: 67px;
-        padding-bottom: 67px;
-        padding-left: 0;
-        padding-right: 0;
-    }
+}
+
+h2 {
+    font-size: 29.61px;
+    font-weight: 900;
+    line-height: 4.56px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 16.78px;
+    font-weight: 600;
+    line-height: 4.56px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.container {
+    padding-top: 67px;
+    padding-bottom: 67px;
 }
 
 .flex-container {
@@ -81,6 +84,10 @@ body {
             margin-top: 17px;
             @media (max-width: 768px) {
                 margin: 0;
+            }
+            &:hover {
+                color: #ee5052 !important;
+                background-color: #303441 !important;
             }
             &:focus {
                 color: #ee5052 !important;
@@ -195,14 +202,100 @@ body {
             height: 40px;
             border-radius: 50%;
             padding: 6px;
+
             &:hover {
                 color: #dedede;
                 border-color: #dedede;
             }
+
             &:focus {
                 color: #dedede;
                 border-color: #dedede;
             }
         }
     }
+}
+
+#contact {
+    background-color: #eb5055;
+    color: #f0d8d9;
+    border-bottom: 6px solid #ea676b;
+
+    input {
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        background-color: #ca4549;
+        outline: none;
+
+        &:focus {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(251, 170, 172);
+        }
+    }
+
+    textarea {
+        border: none;
+        border-radius: 5px;
+        background-color: #ca4549;
+        outline: none;
+
+        &:focus {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(251, 170, 172);
+        }
+    }
+
+    ::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+        color: #f48c8f;
+        font-size: 12px;
+    }
+
+    h4 {
+        margin-bottom: 25px;
+    }
+
+    h6 {
+        margin-bottom: 20px;
+    }
+
+    i {
+        width: 30px;
+    }
+}
+
+footer {
+    background-color: #303441;
+    min-height: 76px;
+
+    .container {
+        padding: 0;
+    }
+
+    h5 {
+        margin-top: 28px;
+    }
+
+    a {
+            border: 1px solid #767e9e;
+            color: #767e9e;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin: 5px;
+            margin-top: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 6px;
+
+            &:hover {
+                color: #dedede;
+                border-color: #dedede;
+            }
+
+            &:focus {
+                color: #dedede;
+                border-color: #dedede;
+            }
+        }
 }
